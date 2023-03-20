@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Teacher } from './teacher'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const teacher = new Teacher("giridhar","Msc")
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+teacher.teach()
+
+// const person = {
+//   name: 'giridhar',
+//   walk() {
+//     console.log(this)
+//   }
+// }
+
+// person.walk()
+
+// const walk = person.walk.bind(person)
+// walk()
+
+// const jobs = [
+//   {id: 1, isActive: true},
+//   {id: 2, isActive: true},
+//   {id: 3, isActive: false},
+// ]
+
+// const activeJobs = jobs.filter(job => job.isActive)
+// console.log(activeJobs);
+
+// const person1 = {
+//   walk(){
+//     setTimeout(() => {
+//       console.log("this",this) 
+//     }, 1000);
+//   }
+// }
+
+// person1.walk()
